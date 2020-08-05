@@ -1,0 +1,32 @@
+{
+  "name": "qnect4",
+  "version": "1.0.0",
+  "description": "A quantum gravity board game",
+  "main": "src/index.js",
+  "scripts": {
+    "dev-server": "webpack-dev-server",
+    "build": "webpack --env.production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parameterized/qnect4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parameterized/qnect4/issues"
+  },
+  "homepage": "https://github.com/parameterized/qnect4#readme",
+  "dependencies": {
+    "core-js": "^3.6.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

@@ -1,2 +1,3 @@
-# qnect4
+# Qnect4
+
 A quantum gravity board game
