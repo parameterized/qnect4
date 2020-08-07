@@ -1,7 +1,0 @@
-npm i --save core-js
-npm i --save-dev @babel/core @babel/plugin-proposal-class-properties @babel/preset-env babel-loader webpack webpack-cli webpack-dev-server
-
-"scripts": {
-  "dev-server": "webpack-dev-server",
-  "build": "webpack --env.production"
-}

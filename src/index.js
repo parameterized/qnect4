@@ -18,7 +18,7 @@ export let touch = null; // set to what callback is referencing
 let fixedDt = 1 / 60;
 let dtTimer = 0;
 
-export let game;
+//export let game;
 
 window.preload = function () {
     gfx = {
@@ -27,9 +27,12 @@ window.preload = function () {
     };
 
     sfx = {
-        hit: loadSound('sfx/hit.wav')
+        hit: loadSound('sfx/hit.wav'),
+        collapse: loadSound('sfx/collapse.wav')
     };
     masterVolume(defaultVolume);
+    sfx.hit.setVolume(0.3);
+    sfx.collapse.setVolume(0.6);
 }
 
 window.setup = function () {
@@ -56,7 +59,7 @@ window.setup = function () {
 
     viewport = new Viewport(targetWidth, targetHeight);
     volume = new Volume();
-    game = new Game();
+    window.game = new Game();
 }
 
 export function resetGame() {

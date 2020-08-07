@@ -15,6 +15,18 @@ let utils = {
         return (viewport.mouseX > x && viewport.mouseX < x + w
             && viewport.mouseY > y && viewport.mouseY < y + h);
     },
+    mouseInCircle(c_or_x, y, d) {
+        let x = c_or_x;
+        if (typeof (c_or_x) === 'object') {
+            let c = c_or_x;
+            if (c.length) {
+                x = c[0]; y = c[1]; d = c[2];
+            } else {
+                x = c.x; y = c.y; d = c.d;
+            }
+        }
+        return (sq(viewport.mouseX - x) + sq(viewport.mouseY - y) < sq(d / 2));
+    },
     cursorStyle(style) {
         if (touchTimer > 0.5) {
             document.body.style.cursor = style;
