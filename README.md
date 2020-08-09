@@ -30,4 +30,4 @@ Four in a row (horizontally, vertically, or diagonally) of classical disks will 
 
 ## Controls
 - Left click a column to drop one of your spooky disks into it
-- If a cell is potentially occupied by 4 different disks (and not supported by spooky disks), left click one of the disks to collapse it to that position
+- If a cell is eligible for measurement, left click one of the disks to collapse it to that cell
